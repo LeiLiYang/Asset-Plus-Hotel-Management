@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="ReviewMaintenanceTicketPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1030.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.assetplus.javafx.controllers.ReviewMaintenanceTicket">
+<AnchorPane fx:id="ReviewMaintenanceTicketPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1030.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.assetplus.javafx.controllers.ReviewMaintenanceTicket">
    <children>
       <BorderPane prefHeight="100.0" prefWidth="1030.0" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -115,7 +115,7 @@
                         <ChoiceBox fx:id="timeEstimateSelect" layoutX="252.0" layoutY="31.0" prefHeight="26.0" prefWidth="221.0" />
                      </children>
                   </Pane>
-                  <CheckBox fx:id="requireApprovalSelect" layoutX="280.0" layoutY="477.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="192.0" text="Manger Approval">
+                  <CheckBox fx:id="requireApprovalSelect" layoutX="253.0" layoutY="475.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="242.0" text="Manager Approval">
                      <font>
                         <Font size="21.0" />
                      </font>
