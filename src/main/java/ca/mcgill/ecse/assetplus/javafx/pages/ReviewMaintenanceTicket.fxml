@@ -16,7 +16,7 @@
    <children>
       <BorderPane prefHeight="100.0" prefWidth="1030.0" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Maintance Ticket" wrappingWidth="328.93603515625" BorderPane.alignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Maintenance Ticket" wrappingWidth="328.93603515625" BorderPane.alignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
