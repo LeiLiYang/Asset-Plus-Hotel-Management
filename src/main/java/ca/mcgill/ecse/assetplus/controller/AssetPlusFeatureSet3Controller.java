@@ -131,9 +131,13 @@ public class AssetPlusFeatureSet3Controller {
     for (SpecificAsset specificAsset : specificAssetsList) {
       if (specificAsset.getAssetNumber() == assetNumber) {
         specificAsset.delete();
-        AssetPlusPersistence.save();
         break;
       }
+    }
+    try {
+      AssetPlusPersistence.save();
+    } catch (RuntimeException e) {
+      throw new RuntimeException(e.getMessage());
     }
   } 
 }
