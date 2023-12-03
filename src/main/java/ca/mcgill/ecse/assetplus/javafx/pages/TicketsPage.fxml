@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="maintenanceTicketsViewAnchorPane" prefHeight="700.0" prefWidth="1030.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.assetplus.javafx.controllers.TicketsPageController">
+<AnchorPane fx:id="maintenanceTicketsViewAnchorPane" prefHeight="700.0" prefWidth="1030.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.assetplus.javafx.controllers.TicketsPageController">
    <children>
       <VBox layoutX="0.5" layoutY="12.666666984558105" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -48,21 +48,21 @@
             </GridPane>
             <TableView fx:id="ticketsTable" editable="true" prefHeight="590.0" prefWidth="1030.0">
               <columns>
-                <TableColumn fx:id="id" prefWidth="97.0" text="Ticket ID" />
-                  <TableColumn fx:id="status" prefWidth="107.0" text="Status" />
-                  <TableColumn fx:id="raisedOnDate" prefWidth="67.0" text="Date" />
-                  <TableColumn fx:id="description" prefWidth="90.0" text="Description" />
-                  <TableColumn fx:id="floorNumber" prefWidth="66.0" text="Floor Number" />
-                  <TableColumn fx:id="roomNumber" prefWidth="87.0" text="Room Number" />
-                  <TableColumn fx:id="assetName" prefWidth="87.0" text="Asset Name" />
-                  <TableColumn fx:id="imageURLs" prefWidth="102.0" text="Image URLs" />
-                  <TableColumn fx:id="raisedByEmail" prefWidth="146.0" text="Raised by" />
-                  <TableColumn fx:id="priority" prefWidth="84.0" text="Priority" />
-                  <TableColumn fx:id="fixedByEmail" prefWidth="84.0" text="Fixer" />
-                  <TableColumn fx:id="timeToResolve" prefWidth="84.0" text="Time to Resolve" />
+                <TableColumn fx:id="id" prefWidth="67.8063440322876" text="Ticket ID" />
+                  <TableColumn fx:id="status" prefWidth="74.80633544921875" text="Status" />
+                  <TableColumn fx:id="raisedOnDate" prefWidth="103.17424011230469" text="Date" />
+                  <TableColumn fx:id="description" prefWidth="124.82577514648438" text="Description" />
+                  <TableColumn fx:id="floorNumber" prefWidth="88.85818481445312" text="Floor Number" />
+                  <TableColumn fx:id="roomNumber" prefWidth="96.03237915039062" text="Room Number" />
+                  <TableColumn fx:id="assetName" prefWidth="83.5291748046875" text="Asset Name" />
+                  <TableColumn fx:id="imageURLs" prefWidth="86.1806640625" text="Image URLs" />
+                  <TableColumn fx:id="raisedByEmail" prefWidth="99.8193359375" text="Raised by" />
+                  <TableColumn fx:id="priority" prefWidth="71.62554931640625" text="Priority" />
+                  <TableColumn fx:id="fixedByEmail" prefWidth="107.09954833984375" text="Fixer" />
+                  <TableColumn fx:id="timeToResolve" prefWidth="106.90057373046875" text="Time to Resolve" />
                   <TableColumn fx:id="approvalRequired" prefWidth="84.0" text="Approval Required" />
                   <TableColumn fx:id="expectLifeSpanInDays" prefWidth="84.0" text="Life Span" />
-                  <TableColumn fx:id="notes" prefWidth="84.0" text="Notes" />
+                  <TableColumn fx:id="notes" prefWidth="850.0" text="Notes" />
               </columns>
             </TableView>
             <GridPane prefHeight="99.0" prefWidth="1030.0">

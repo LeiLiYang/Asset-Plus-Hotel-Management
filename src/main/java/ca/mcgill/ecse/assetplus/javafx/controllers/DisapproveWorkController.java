@@ -10,6 +10,7 @@ import static ca.mcgill.ecse.assetplus.javafx.controllers.ViewUtils.sceneSwitch;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import java.util.Calendar;
@@ -29,6 +30,9 @@ public class DisapproveWorkController {
     @FXML
     private Button updateDisapproveWork;
 
+    @FXML 
+    private DatePicker disapproveWorkDate;
+
     @FXML
     private AnchorPane disapproveWorkAnchorPane;
 
@@ -41,10 +45,9 @@ public class DisapproveWorkController {
     @FXML
     void updateDisapproveWorkClicked(ActionEvent event) { 
         String reason = disapproveWorkComments.getText();
-        Calendar calendar = Calendar.getInstance();
-        java.util.Date currentDate = calendar.getTime();
-        Date today = new Date(currentDate.getTime());
-        if (successful(AssetPlusTicketingController.disapproveWorkOnMaintenanceTicket(ticketID, today, reason))){ 
+        LocalDate theLocalDate = disapproveWorkDate.getValue();
+        var theDate = Date.valueOf(theLocalDate);
+        if (successful(AssetPlusTicketingController.disapproveWorkOnMaintenanceTicket(ticketID, theDate, reason))){ 
             disapproveWorkComments.setText(""); 
             sceneSwitch(disapproveWorkAnchorPane, "../pages/TicketsPage.fxml");
         }
